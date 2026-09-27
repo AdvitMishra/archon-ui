@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: rgba(124, 58, 237, 0.35);
+  color: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09090b;
+  color: #e4e4e7;
+}
+
+/* Thin dark scrollbar to match the workspace theme */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #09090b;
+}
+*::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Accessible focus ring, visible on keyboard navigation */
+:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
